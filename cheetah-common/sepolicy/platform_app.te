@@ -1,0 +1,14 @@
+allow platform_app self:process ptrace;
+
+# add permissions for fs of external_storage: fuseblk(exfat,ntfs)
+allow platform_app fuseblk:dir create_dir_perms;
+allow platform_app fuseblk:file create_file_perms;
+allow platform_app softwinner_service:service_manager find;
+allow platform_app sst_storage_device:chr_file {open read ioctl};
+# qw permission for the memtester of DragonAging.
+allow platform_app qw_socket:unix_stream_socket { connectto };
+allow platform_app qw:unix_stream_socket { connectto };
+allow platform_app qw_exec:file rx_file_perms;
+allow platform_app qw_socket:fifo_file rw_file_perms;
+allow platform_app qw_daemon_device:dir search;
+allow platform_app qw_socket:sock_file rw_file_perms;

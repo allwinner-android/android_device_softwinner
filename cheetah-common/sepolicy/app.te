@@ -1,0 +1,5 @@
+#add permission for fs:fuseblk(ntfs,exfat) of external storage
+allow appdomain fuseblk:dir r_dir_perms;
+allow appdomain fuseblk:file rw_file_perms;
+allow appdomain systemmix:binder call;
+allow appdomain sysfs:file r_file_perms;

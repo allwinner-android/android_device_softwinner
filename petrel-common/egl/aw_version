@@ -1,0 +1,10 @@
+mali-t720: r14p0-01rel0 um android nougat arm 019
+
+Build parameters:
+profile=tx041-release
+gpu=t72x
+hwver=r1p1
+kernel_modules=0
+android_version=nougat
+android_config_override=sunxi
+afbc=0

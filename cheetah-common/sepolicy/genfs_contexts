@@ -1,0 +1,4 @@
+#add external storage: ntfs and exfat
+genfscon fuseblk / u:object_r:fuseblk:s0
+genfscon iso9660 / u:object_r:bluray:s0
+genfscon udf / u:object_r:bluray:s0

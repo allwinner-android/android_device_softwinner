@@ -1,0 +1,5 @@
+#define fuseblk for ntfs and exfat
+type fuseblk, sdcard_type, fs_type, mlstrustedobject;
+type log_bg_file, file_type;
+type bluray, sdcard_type, fs_type, mlstrustedobject;
+

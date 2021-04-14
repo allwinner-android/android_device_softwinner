@@ -1,0 +1,2 @@
+allow untrusted_app domain:file r_file_perms;
+allow untrusted_app domain:dir r_dir_perms;

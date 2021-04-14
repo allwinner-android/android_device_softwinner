@@ -1,0 +1,29 @@
+TARGET_USES_64_BIT_BINDER := true
+
+
+TARGET_BOARD_PLATFORM := cheetah
+SW_CHIP_PLATFORM := H5
+TARGET_USE_NEON_OPTIMIZATION := true
+TARGET_CPU_SMP := true
+
+TARGET_NO_BOOTLOADER := true
+
+TARGET_BOOTLOADER_BOARD_NAME := exdroid
+TARGET_BOOTLOADER_NAME := exdroid
+
+#SurfaceFlinger's configs
+NUM_FRAMEBUFFER_SURFACE_BUFFERS := 4
+TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
+
+BOARD_EGL_CFG := device/softwinner/cheetah-common/egl/egl.cfg
+BOARD_KERNEL_BASE := 0x40000000
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x80000
+
+BOARD_CHARGER_ENABLE_SUSPEND := true
+
+BOARD_SEPOLICY_DIRS := \
+    device/softwinner/cheetah-common/sepolicy
+
+USE_OPENGL_RENDERER := true
+
+
